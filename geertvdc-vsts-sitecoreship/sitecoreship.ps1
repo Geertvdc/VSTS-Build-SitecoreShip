@@ -1,7 +1,11 @@
-Param(
-     [string]$sitecoreUrl, 
-     [string]$fileUrl
- )
+Trace-VstsEnteringInvocation $MyInvocation
+
+$fileUrl = Get-VstsInput -Name fileUrl -Require
+$sitecoreUrl = Get-VstsInput -Name sitecoreUrl -Require
+
+
+ Write-Host "Sitecore URL $sitecoreUrl"
+Write-Host "file URL $fileUrl"
 
 Write-Host "create httpclient"
 Add-Type -AssemblyName System.Net.Http

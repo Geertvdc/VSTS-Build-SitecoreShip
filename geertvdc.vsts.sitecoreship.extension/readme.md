@@ -11,7 +11,7 @@ When you are using Sitecore Ship in your Sitecore instance you can use this buil
 
 
 
-![screenshot](https://raw.githubusercontent.com/geertvdc.Extension/images/2.png)
+![screenshot](https://raw.githubusercontent.com/Geertvdc/VSTS-Build-SitecoreShip/master/geertvdc.vsts.sitecoreship.extension/images/2.png)
 
 # Extra links
 

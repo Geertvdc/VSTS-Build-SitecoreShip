@@ -30,7 +30,7 @@
         },
         {
             "name": "sitecoreUrl",
-   "type": "string",
+            "type": "string",
             "label": "Sitecore Site URL",
             "defaultValue": "",
             "required": true,
