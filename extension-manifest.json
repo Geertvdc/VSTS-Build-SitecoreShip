@@ -1,0 +1,72 @@
+{
+  "manifestVersion": 1,
+  "id": "GeertvanderCruijsen-Vsts-Release-SitecoreShip",
+  "name": "Sitecore Ship",
+  "version": "1.0.2",
+  "publisher": "geertvdcruijsen",
+  "public": false,
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "description": "Deploy sitecore .update or .zip package to your Sitecore site using Sitecore Ship",
+  "categories": [
+    "Build and release"
+  ],
+  "tags": [
+    "release",
+    "Sitecore",
+    "ship",
+    "build",
+    "pipeline",
+    "Xpirit",
+    "deploy"
+  ],
+  "screenshots": [
+    {
+       "path": "geertvdc.vsts.sitecoreship.extension/images/demo.png"
+    }
+  ],
+  "content": {
+    "details": {
+      "path": "geertvdc.vsts.sitecoreship.extension/readme.md"
+    },
+    "license": {
+      "path": "geertvdc.vsts.sitecoreship.extension/license.txt"
+    }
+  },
+  "links": {
+    "getstarted": {
+      "uri": "http://mobilefirstcloudfirst.net"
+    },
+    "support": {
+      "uri": "https://github.com/Geertvdc/VSTS-Build-SitecoreShip"
+    }
+  },
+  "branding": {
+    "color": "rgb(255, 255, 255)",
+    "theme": "light"
+  },
+  "icons": {
+    "default": "geertvdc.vsts.sitecoreship.extension/images/sitecoreship.png"
+  },
+  "files": [
+    {
+      "path": "geertvdc-vsts-sitecoreship"
+    }
+  ],
+
+  "contributions": [
+    {
+      "id": "geertvdc-vsts-sitecoreship",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "geertvdc-vsts-sitecoreship"
+      }
+    }
+  ]
+}
