@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "id": "GeertvanderCruijsen-Vsts-Release-SitecoreShip",
   "name": "Sitecore Ship",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "publisher": "geertvdcruijsen",
   "public": false,
   "targets": [
@@ -25,7 +25,7 @@
   ],
   "screenshots": [
     {
-       "path": "geertvdc.vsts.sitecoreship.extension/images/demo.png"
+       "path": "geertvdc.vsts.sitecoreship.extension/images/1.png"
     }
   ],
   "content": {
