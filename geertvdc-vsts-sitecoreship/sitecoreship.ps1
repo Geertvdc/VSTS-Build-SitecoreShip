@@ -28,7 +28,7 @@ Write-Host "form content created"
 try
 {
     Write-Host "before postAsync"
-    $response = $httpClient.PostAsync($sitecoreUrl, $content).Result
+    $response = $httpClient.PostAsync("$sitecoreUrl/services/package/install/fileupload", $content).Result
     Write-Host "After postAsync"
 
     if (!$response.IsSuccessStatusCode)
