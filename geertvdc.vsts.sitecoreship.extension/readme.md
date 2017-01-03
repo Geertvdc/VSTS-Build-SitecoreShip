@@ -17,4 +17,4 @@ When you are using Sitecore Ship in your Sitecore instance you can use this buil
 
 [Source for this VSTS extension on Github](https://github.com/Geertvdc/VSTS-Build-SitecoreShip)
 
-[My blog](https://mobilefirstcloudfirst.com)
+[My blog](http://mobilefirstcloudfirst.net/2017/01/created-open-source-vsts-build-release-task-sitecore-ship/)
