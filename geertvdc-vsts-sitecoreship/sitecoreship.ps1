@@ -37,8 +37,11 @@ try
 
     if (!$response.IsSuccessStatusCode)
     {
-        Write-Host "Not success"
-        $responseBody = $response.Content.ReadAsStringAsync().Result
+        Write-Host "Not success. status code: $response.StatusCode"
+        if($response.Content -ne $Null)
+        {
+            $responseBody = $response.Content.ReadAsStringAsync().Result
+        }
         $errorMessage = "Status code {0}. Reason {1}. Server reported the following message: {2}." -f $response.StatusCode, $response.ReasonPhrase, $responseBody
 
         Write-Host "$errorMessage"
