@@ -4,13 +4,14 @@ $fileUrl = Get-VstsInput -Name fileUrl -Require
 $sitecoreUrl = Get-VstsInput -Name sitecoreUrl -Require
 
 
- Write-Host "Sitecore URL $sitecoreUrl"
+Write-Host "Sitecore URL $sitecoreUrl"
 Write-Host "file URL $fileUrl"
 
 Write-Host "create httpclient"
 Add-Type -AssemblyName System.Net.Http
 $httpClientHandler = New-Object System.Net.Http.HttpClientHandler
 $httpClient = New-Object System.Net.Http.Httpclient $httpClientHandler
+$httpClient.Timeout = New-TimeSpan -Minutes 30
 $packageFileStream = New-Object System.IO.FileStream @($fileUrl, [System.IO.FileMode]::Open)
 
 Write-Host "file opened"
